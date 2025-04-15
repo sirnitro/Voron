@@ -1,0 +1,222 @@
+{
+    "name": "Voron 2.4 - 350x350x250 Build",
+    "lists": [
+        {
+            "name": "1\ufe0f\u20e3 Frame & Mechanical",
+            "tasks": [
+                {
+                    "name": "Cut & Prep Extrusions",
+                    "subtasks": [
+                        "Cut 2020 extrusions to spec",
+                        "Tap M5 holes on all ends",
+                        "Label each piece (A1\u2013I2)",
+                        "Deburr and clean"
+                    ]
+                },
+                {
+                    "name": "Assemble Frame",
+                    "subtasks": [
+                        "Install base extrusions",
+                        "Square and tighten corners",
+                        "Add vertical uprights",
+                        "Assemble top frame"
+                    ]
+                },
+                {
+                    "name": "Install Linear Rails",
+                    "subtasks": [
+                        "Mount MGN9H rails (Y-axis)",
+                        "Mount MGN12H rail (X-axis)",
+                        "Mount MGN12H rails (Z-axis)",
+                        "Check alignment and smooth travel"
+                    ]
+                },
+                {
+                    "name": "Z-Axis Assembly",
+                    "subtasks": [
+                        "Install Z idlers",
+                        "Mount Z motors",
+                        "Install Z belts or leadscrews",
+                        "Install bed frame rails (G1\u2013G3)"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "2\ufe0f\u20e3 Printed Parts",
+            "tasks": [
+                {
+                    "name": "Print Required Parts",
+                    "subtasks": [
+                        "Verify part list (STLs)",
+                        "Slice with proper profiles",
+                        "Print in ABS or ASA",
+                        "Inspect and clean up parts"
+                    ]
+                },
+                {
+                    "name": "Assemble Sub-Components",
+                    "subtasks": [
+                        "Toolhead assemblies",
+                        "XY joints and carriages",
+                        "Z-idlers and motor mounts",
+                        "Cable chain mounts"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "3\ufe0f\u20e3 Electronics & Wiring",
+            "tasks": [
+                {
+                    "name": "Mount Electronics",
+                    "subtasks": [
+                        "Install Manta M8P",
+                        "Insert CB1",
+                        "Mount SSR",
+                        "Mount power supply",
+                        "Install DIN rails (optional)"
+                    ]
+                },
+                {
+                    "name": "Wire Power System",
+                    "subtasks": [
+                        "Connect 24V to Manta",
+                        "Wire SSR to AC bed heater",
+                        "Ground frame & verify polarity"
+                    ]
+                },
+                {
+                    "name": "Wire Motors & Sensors",
+                    "subtasks": [
+                        "Connect stepper motors",
+                        "Install and wire Z probe (TAP or inductive)",
+                        "Install endstops if used",
+                        "Wire thermistors"
+                    ]
+                },
+                {
+                    "name": "CANbus & HermitCrab",
+                    "subtasks": [
+                        "Mount HermitCrab on toolhead",
+                        "Run CAN cable to Manta",
+                        "Terminate CAN lines properly",
+                        "Configure CAN toolboard in firmware"
+                    ]
+                },
+                {
+                    "name": "Fans & Accessories",
+                    "subtasks": [
+                        "Wire part cooling fan",
+                        "Wire hotend fan (always on)",
+                        "Wire board cooling fan",
+                        "Wire LED lighting (optional)"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "4\ufe0f\u20e3 Motion & Hotend System",
+            "tasks": [
+                {
+                    "name": "Install Stepper Drivers",
+                    "subtasks": [
+                        "Insert EZ5160s into Manta",
+                        "Set SPI jumpers",
+                        "Verify driver orientation"
+                    ]
+                },
+                {
+                    "name": "Install Toolhead",
+                    "subtasks": [
+                        "Mount hotend to carriage",
+                        "Connect heater and thermistor",
+                        "Attach fan shroud and part fans",
+                        "Connect HermitCrab plugs"
+                    ]
+                },
+                {
+                    "name": "Route Belts",
+                    "subtasks": [
+                        "Install XY belts to pulleys",
+                        "Adjust belt tension evenly",
+                        "Secure belt ends",
+                        "Test for binding"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "5\ufe0f\u20e3 Firmware & Software",
+            "tasks": [
+                {
+                    "name": "Flash Klipper Firmware",
+                    "subtasks": [
+                        "Flash Manta using DFU mode",
+                        "Setup CB1 with FluiddPi or MainsailOS",
+                        "Configure CANboot for toolhead",
+                        "Flash toolboard firmware"
+                    ]
+                },
+                {
+                    "name": "Configure Printer.cfg",
+                    "subtasks": [
+                        "Define motors and drivers",
+                        "Set kinematics for CoreXY",
+                        "Set CANbus UUID for HermitCrab",
+                        "Add thermistors and fans"
+                    ]
+                },
+                {
+                    "name": "Motion Tuning",
+                    "subtasks": [
+                        "Verify movement on all axes",
+                        "Run homing test",
+                        "Tune PID for hotend and bed",
+                        "Calibrate Z-offset"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "6\ufe0f\u20e3 Final Assembly & Testing",
+            "tasks": [
+                {
+                    "name": "Cable Management",
+                    "subtasks": [
+                        "Sleeve and secure cables",
+                        "Use zip ties or channels",
+                        "Isolate AC and DC lines",
+                        "Label connectors"
+                    ]
+                },
+                {
+                    "name": "Initial Power On",
+                    "subtasks": [
+                        "Confirm all voltages",
+                        "Check for smoke or shorts",
+                        "Confirm Klipper connection"
+                    ]
+                },
+                {
+                    "name": "Validation",
+                    "subtasks": [
+                        "Run test cube",
+                        "Validate probe accuracy",
+                        "Check thermal graphs",
+                        "Test emergency stop"
+                    ]
+                },
+                {
+                    "name": "Optional Mods",
+                    "subtasks": [
+                        "Add LED strips",
+                        "Install touchscreen",
+                        "Add camera module",
+                        "Customize enclosure"
+                    ]
+                }
+            ]
+        }
+    ]
+}
